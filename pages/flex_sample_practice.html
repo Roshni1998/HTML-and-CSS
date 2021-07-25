@@ -1,0 +1,123 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Website Layout-4</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: row;
+                margin: 0;
+            }
+            
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                height: 20vh;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContentItem {
+                text-align: left;
+                background: deepskyblue;
+            }
+
+            article {
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .center {
+                text-align: center;
+
+            }
+
+            .sideBarLeftItem { 
+                background: gold;
+             }
+            .sideBarRightItem { 
+                background: hotpink; 
+            }
+
+            .sideBarItem { flex: 1 0 0; border: 0px solid green; }
+
+            .outer-col-1 {
+                background: #D7E8D4;
+            }
+            .outer-col-2 {
+                display: flex;
+                flex-direction: column;
+                flex: 5;
+            }
+            .inner-row {
+                display: flex;
+                flex-direction: row;
+            }
+            .inner-col {
+                flex: 4;
+            }
+            .inner-row article {
+                min-height: 20vh;
+            }
+            .inner-row aside {
+                background: beige;
+                flex: 1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p><b>Left Side Bar</b></p></div></sideBar>
+        <div class="outer-col-2">
+            <header class="headerContainer"><h1>HEADER - Sample Flexbox Example</h1></header>
+            <div class="inner-row">
+                <div class="inner-col">
+                    <section class="mainContentItem">
+                        <article>
+                          <h2>First article</h2>
+                          <p>CSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. 
+                              The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size.</p>
+                        </article>
+                        <article>
+                          <h2>Second article</h2>
+                          <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink 
+                              to fit into smaller spaces. To learn how to use the Flexbox layout system to create web layouts.</p>
+                        </article>
+                        <article>
+                          <h2>Third article</h2>
+                          <p>CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document 
+                              written in markup language. It provides an additional feature to HTML. It is generally used with HTML to change the style of web 
+                              pages and user interfaces. It can also be used with any kind of XML documents including plain XML, SVG and XUL.</p>
+                        </article>
+                      </section>
+                      <footer class="footerContainer">Footer</footer>
+                </div>
+                <sidebar class="sideBarItem sideBarRightItem"><div class="center"><p><b>Right Side Bar</b></p></div></sidebar>
+            </div>
+        </div>
+    </body>
+    </head>
+</html>
+
+
+
+
+
