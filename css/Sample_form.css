@@ -54,3 +54,33 @@ error-output {
     font-style: italic;
     color: red;
 }
+
+pwd-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+email-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+url-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+number-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+tel-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
